@@ -17,8 +17,8 @@ public class CustomerController {
 
     @PostMapping("/api/v1/customers")
     public Response<CustomerDto> createNewCustomer(@RequestParam String name,
-                                         @RequestParam String address,
-                                         @RequestParam String phoneNumber) {
+                                                   @RequestParam String address,
+                                                   @RequestParam String phoneNumber) {
         return Response.success(customerService.newCustomer(
                 CreateCustomer.builder()
                         .address(address)
