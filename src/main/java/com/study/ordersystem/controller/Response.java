@@ -17,7 +17,7 @@ public class Response<T> {
     }
 
     public static<T> Response<T> success(T data) { // 성공시
-        return new Response<>(HttpStatus.OK, "SUCESS", data);
+        return new Response<>(HttpStatus.OK, "SUCCESS", data);
     }
 
     public static<T> Response<T> fail(String errorMessage) { // 실패시

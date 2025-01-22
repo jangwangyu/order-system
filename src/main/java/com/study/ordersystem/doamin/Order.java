@@ -36,7 +36,7 @@ public class Order {
         Set<OrderItem> items = new HashSet<>();
 
         for(Map.Entry<Integer, Integer> entry : createOrder.getQuantityByProduct().entrySet()) {
-            items.add(new OrderItem(entry.getKey(), entry.getValue()));
+            items.add(new OrderItem(entry.getKey(), entry.getValue())); // (어떤 상품, 몇 개)
         }
 
         return new Order(createOrder.getCustomerId(), items);

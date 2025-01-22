@@ -17,7 +17,7 @@ CREATE TABLE orders
 (
     order_id    INT         NOT NULL AUTO_INCREMENT,
     customer_id INT         NOT NULL,
-    ordered_at  DATETIME    NOT NULL ,
+    order_at  DATETIME    NOT NULL ,
     PRIMARY KEY (order_id)
 );
 
