@@ -17,15 +17,15 @@ public class CustomerController {
     }
 
     @PostMapping("/api/v1/customers")
-    public CustomerDto createNewCustomer(@RequestParam String name,
+    public Response<CustomerDto> createNewCustomer(@RequestParam String name,
                                          @RequestParam String address,
                                          @RequestParam String phoneNumber) {
-        return customerService.newCustomer(
+        return Response.success(customerService.newCustomer(
                 CreateCustomer.builder()
                         .address(address)
                         .name(name)
                         .phoneNumber(phoneNumber)
-                        .build()
+                        .build())
         );
     }
 }
