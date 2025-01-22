@@ -1,7 +1,6 @@
 package com.study.ordersystem.controller;
 
 import com.study.ordersystem.doamin.CreateCustomer;
-import com.study.ordersystem.doamin.Customer;
 import com.study.ordersystem.doamin.CustomerDto;
 import com.study.ordersystem.service.CustomerService;
 import org.springframework.web.bind.annotation.PostMapping;

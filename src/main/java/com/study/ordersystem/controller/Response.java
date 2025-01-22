@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 
 @Getter
 public class Response<T> {
-    private final HttpStatus statusCode;
+    private final HttpStatus statusCode; // test
     private final String message;
     private final T data;
 
